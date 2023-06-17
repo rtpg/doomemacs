@@ -22,7 +22,9 @@ buffer. This is particularly useful for partials.
 Indentation is always preserved when formatting regions.")
 
 (defvar-local +format-with nil
-  "Set this to explicitly use a certain formatter for the current buffer.")
+  "Set this to explicitly use a certain formatter for the current buffer.
+  
+  This can be set to :none to disable formatting.")
 
 (defvar +format-with-lsp t
   "If non-nil, format with LSP formatter if it's available.
